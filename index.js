@@ -47,7 +47,7 @@
 let presidentKey = true;
 let primeMinisterKey = false;
 let generalOfArmiesKey = true;
-let masterKey = true;
+let masterKey = false;
 
 const bombWillLaunch = (presidentKey && primeMinisterKey && generalOfArmiesKey) || masterKey;
 
