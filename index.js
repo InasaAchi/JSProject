@@ -57,27 +57,37 @@
 
 /* Pin code */
 
-const userPinCode = 7825;
+// const userPinCode = 7825;
 
-const currentPinCode = 7825;
-const newPinCode = 2825;
-const retypeNewPinCode = 2825;
+// const currentPinCode = 7825;
+// const newPinCode = 2825;
+// const retypeNewPinCode = 2825;
 
-const pinChangeComplete = ((userPinCode == currentPinCode) && (newPinCode == retypeNewPinCode));
+// const pinChangeComplete = ((userPinCode == currentPinCode) && (newPinCode == retypeNewPinCode));
 
-console.log("Please enter pin code");
+// console.log("Please enter pin code");
 
-if(userPinCode == currentPinCode) {
-    console.log("It's been a long time before you have changed pin Code - Please enter new Pin code");
-    console.log("Retype new pin")
-    if(newPinCode !== retypeNewPinCode) {
-        console.log("New Pin code is incorrect - please enter the correct pin");
-    } else {
-        console.log("Pin has Changed")
-    }
-} else {
-    console.log("Pin is incorect - please enter correct pin");
-}
+// if(userPinCode == currentPinCode) {
+//     console.log("It's been a long time before you have changed pin Code - Please enter new Pin code");
+//     console.log("Retype new pin")
+//     if(newPinCode !== retypeNewPinCode) {
+//         console.log("New Pin code is incorrect - please enter the correct pin");
+//     } else {
+//         console.log("Pin has Changed")
+//     }
+// } else {
+//     console.log("Pin is incorect - please enter correct pin");
+// }
 
 
-console.log(pinChangeComplete);
+// console.log(pinChangeComplete);
+
+/* GAME OVER */
+
+let health = 1;
+let lives = 0;
+
+const gameOver = (health == 0 && lives == 0) || (lives < 3 == 0 && health);
+
+console.log(gameOver);
+
