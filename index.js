@@ -86,8 +86,8 @@
 
 /* GAME OVER */
 
-// let health = 1;
-// let lives = 0;
+// let health = 0;
+// let lives = 1;
 
 // const gameOver = (health == 0 && lives == 0) || (lives < 3 == 0 && health);
 
@@ -97,41 +97,43 @@
 
 /* MEAMA */
 
-// let capsuleCount = 0;
-// let capsulePrice = 2;
-// let userBalance = 0;
-// let creditCardStatus = userBalance >= capsulePrice || userBalance <= capsulePrice;
+let capsuleCount = 2;
+let capsulePrice = 4;
+let userBalance = 7;
+let creditCardStatus = (userBalance >= capsulePrice || userBalance <= capsulePrice) && (capsulePrice * capsuleCount) >= userBalance;
 
-// if(userBalance < capsulePrice) {
-//     console.log("There isn't enouhg money in your account");
-// }
+if(userBalance < capsulePrice) {
+    console.log("There isn't enouhg money in your account");
+}
 
-// if(capsuleCount < 1) {
-//     console.log("I'm sorry, there is not enougn capsule");
-// }
+if(creditCardStatus) {
+    console.log("I'm sorry, there is not enougn capsule");
+}
 
-// const paymentComplete = userBalance >= capsulePrice && capsuleCount > 0;
+const paymentComplete = userBalance >= capsulePrice && capsuleCount > 0 && !creditCardStatus;
 
-// console.log(paymentComplete);
+console.log(paymentComplete);
 
 
 
 /* Hotel Booking */
 
-let availableRooms = 10;
-let roomPrice = 150;
-let discount = (30/150)*100;
+// let availableRooms = 10;
+// let roomPrice = 150;
+// let discount = (30/150)*100;
 
-let userBalance = 1500;
-let userHasDiscount = false;
-let userRoomCount = 3;
+// let userBalance = 1400;
+// let userHasDiscount = true;
+// let userRoomCount = 10;
 
-const paymentComplete = userBalance >= roomPrice && availableRooms >= userRoomCount && (userRoomCount * roomPrice) <= userBalance;
 
-if(userHasDiscount) {
-    console.log("You have discount, 20% of the total amount will be reduced");
-} else {
-    console.log("Unfortunately, you don't have a discount");
-}
+// const userDiscount = (userHasDiscount == true && ((userRoomCount * roomPrice)-(roomPrice * discount * userRoomCount))) <= userBalance;
+// const paymentComplete = userBalance >= roomPrice && availableRooms >= userRoomCount && ((userRoomCount * roomPrice) - (discount && userDiscount) <= userBalance);
 
-console.log(paymentComplete);
+// if(userHasDiscount) {
+//     console.log("You have discount, 20% of the total amount will be reduced");
+// } else {
+//     console.log("Unfortunately, you don't have a discount");
+// }
+
+// console.log(paymentComplete);
