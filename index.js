@@ -118,24 +118,139 @@
 
 /* Hotel Booking */
 
-let availableRooms = 10;
-let roomPrice = 150;
-let discount = 20;
+// let availableRooms = 10;
+// let roomPrice = 150;
+// let discount = 20;
 
-let userBalance = 1100;
-let userHasDiscount = true;
-let userRoomCount = 10;
+// let userBalance = 1100;
+// let userHasDiscount = true;
+// let userRoomCount = 10;
 
 
-const paymentComplete = availableRooms >= userRoomCount && userBalance >= userRoomCount * roomPrice - (userHasDiscount && roomPrice * userRoomCount * (discount/100));
+// const paymentComplete = availableRooms >= userRoomCount && userBalance >= userRoomCount * roomPrice - (userHasDiscount && roomPrice * userRoomCount * (discount/100));
 
-if(userHasDiscount) {
-    console.log("You have discount, 20% of the total amount will be reduced");
-    if(userRoomCount * roomPrice - (userHasDiscount && roomPrice * userRoomCount * (discount/100)) > userBalance) {
-        console.log("Unfortunately you don't have enough money in your account");
-    }
-} else {
-    console.log("Unfortunately, you don't have a discount");
-}
+// if(userHasDiscount) {
+//     console.log("You have discount, 20% of the total amount will be reduced");
+//     if(userRoomCount * roomPrice - (userHasDiscount && roomPrice * userRoomCount * (discount/100)) > userBalance) {
+//         console.log("Unfortunately you don't have enough money in your account");
+//     }
+// } else {
+//     console.log("Unfortunately, you don't have a discount");
+// }
 
-console.log(paymentComplete);
+// console.log(paymentComplete);
+
+
+
+/* New message */
+
+// let message = false;
+
+// const newMessages = massage;
+
+// console.log("Hello shemogevle");
+
+// if(message) {
+//     console.log("You have unread messages");
+// } else {
+//     console.log("You don't have unread messages");
+// }
+
+// console.log(newMessages);
+
+
+
+/* Online shop */
+
+// let userBalance = 400;
+// let cartTotal =1100;
+
+// if(userBalance >= cartTotal) {
+//     console.log("Payment complete");
+// } else {
+//     console.log("You don't have enough money in your account");
+// }
+
+
+/* Exam */
+
+// let testScore = 95;
+
+// const result = testScore > 50;
+
+// if(testScore >= 95) {
+//     console.log("Congratulations, You were admitted to Novator");
+// } else if(testScore < 95 && testScore >= 70) {
+//     console.log("Congratulations, You were admitted to Kembrij university");
+// } else if(testScore < 70 && testScore > 50) {
+//     console.log("Congratulations, You were admitted to GTU");
+// }
+
+// console.log(result);
+
+
+/* Sale system */
+
+// let adminSale = 50;
+// let frequentClientSale = 30;
+// let studentSale = 25;
+
+// let userBalance = 400;
+// let cartTotal = 450;
+
+// let userIsAdmin = true;
+// let userIsFrequentClient = false;
+// let userIsStudent = false;
+
+// let userDiscount = 0;
+
+// if (userIsAdmin) {
+//   userDiscount = adminSale;
+// } else if (userIsFrequentClient) {
+//   userDiscount = frequentClientSale;
+// } else if (userIsStudent) {
+//   userDiscount = studentSale;
+// }
+
+// let totalWithDiscount = cartTotal - userDiscount;
+
+// if (totalWithDiscount <= userBalance) {
+//   console.log("Payment completed");
+// } else {
+//   console.log("You don't have enough money");
+// }
+
+
+
+/* From Tbilisi to Batumi */
+
+// let fuel = 49;
+
+// let igoeti = 10;
+// let gori = 20;
+// let xashuri = 30;
+// let qutaisi = 50;
+// let batumi = 80;
+
+
+// if(fuel >= igoeti && fuel < gori) {
+//     console.log("igoetamde");
+// } 
+
+// if(fuel >= gori && fuel < xashuri) {
+//     console.log("Goramde");
+// }
+
+// if(fuel >= xashuri && fuel < qutaisi) {
+//     console.log("xashuri");
+// }
+
+// if(fuel >= qutaisi && fuel < batumi) {
+//     console.log("qutaisi");
+// }
+
+// if(fuel >= batumi) {
+//     console.log("Batumi");
+// }
+
+
