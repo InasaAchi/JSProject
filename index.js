@@ -254,3 +254,119 @@
 // }
 
 
+
+/* || Types of information */
+
+
+/* Hello message */
+
+// let userFirstName = "Hello world, you are so beautifull!"
+
+// console.log(userFirstName);
+
+
+
+/* Online shop */
+
+// let userBalance = 30;
+// let cartTotal = 100;
+
+// if(userBalance >= cartTotal) {
+//     console.log("Payment completed");
+// } else {
+//     console.log("Transaction isn't completed, you are missing " + (cartTotal - userBalance) + " lari");
+// }
+
+
+/* Exam score */
+
+// let maxScore = 100;
+// let barrier = 51;
+// let studentScore = 50;
+
+// if(studentScore >= barrier) {
+//     console.log("Congratulations, you have passed " + barrier + " passsing score with " + studentScore + " score");
+// } else {
+//     console.log("I'm sorry, you didn't pass " + barrier + " passsing score" + " with " + studentScore + " score."); //ფასინგ სქორე, ფასინგ სქორე :დ
+// }
+
+
+/* Delivery service */
+
+// let shippingIsPossible = false;
+
+// const shipping = shippingIsPossible && "Delivery to your address is available" || !shippingIsPossible && "Delivery service to your address is not available";
+
+// console.log(shipping);
+
+
+/* Politcorection */
+
+// let userLoggedIn = false;
+// let userFirstName = "Fiona";
+// let userIsFemale = true;
+
+// if(userLoggedIn && userIsFemale) {
+//     console.log("Hello mis " + userFirstName);
+// } else if(!userLoggedIn && userIsFemale) {
+//     console.log("Good by mis " + userFirstName);
+// } else if(userLoggedIn && !userIsFemale) {
+//     console.log("Hello mister " + userFirstName);
+// } else if(!userLoggedIn && !userIsFemale) {
+//     console.log("Good by mister " + userFirstName);
+// }
+
+
+/* || Array exercises */
+
+/* ChatGPT */
+
+// let userQuestions = [];
+// let maxQuestion = 25;
+// let questionCount = 25
+
+// if(questionCount > maxQuestion) {
+//     console.log("You will be bale to ask.....");
+// } else {
+//     console.log("next question");
+// }
+
+
+/* Fitness app */
+
+// let userWeights = [59, 60, 62, 64, 67];
+// let goal = 72;
+
+// const currentWeight = userWeights[userWeights.length - 1];
+// const remainWeight = -(currentWeight - goal);
+
+// console.log("You have " + remainWeight + " killos left to reach your goal");
+
+
+
+/* Education */
+
+// let gigosTestResults = [12, 13, 15, 16, 17, 12];
+
+// const progress = gigosTestResults[(gigosTestResults.length - 1)] - gigosTestResults[0];
+
+// if(progress < 10 && progress > 0) {
+//     console.log("Zarmaca");
+// } else if (progress > 10) {
+//     console.log("GOOD BOY"); 
+// } else if(progress == 0) {
+//     console.log("nwnwnwn");
+// }
+
+
+/* Passed */
+
+let gigosResults = [26, 25, 24, 25];
+
+const barrier = 25;
+
+if(gigosResults[0] >= barrier && gigosResults[1] >= barrier && gigosResults[2] >= barrier && gigosResults[3])  {
+    console.log("Passed");
+} else {
+    console.log("nwnwnw")
+}
