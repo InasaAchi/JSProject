@@ -75,10 +75,36 @@
 
 /* 300 */
 
-let x = 300;
+// let x = 300;
 
-for(let i = 1; i <= x; i++) {
-    if(x % i == 0) {
-        console.log(i);
-    }
+// for(let i = 1; i <= x; i++) {
+//     if(x % i == 0) {
+//         console.log(i);
+//     }
+// }
+
+
+/* Separatot */
+
+// let x = 100;
+// let y = 0;
+
+// for(let i = 0; i <= x; i++) {
+//     if(x % i == 0) {
+//         y += i++;
+//     }
+// }
+
+// console.log(y);
+
+
+/* Simple numbers */
+
+let x = 17;
+
+
+if(x % 2 !== 0 && x % 3 !== 0) {
+    console.log("martivi ricxvi");
+} else {
+    console.log("nametani rtuli");
 }
