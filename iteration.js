@@ -100,11 +100,18 @@
 
 /* Simple numbers */
 
-let x = 17;
+let x = 20;
+let y = 0;
 
-
-if(x % 2 !== 0 && x % 3 !== 0) {
-    console.log("martivi ricxvi");
-} else {
-    console.log("nametani rtuli");
+for (let i = 1; i <= x; i++) {
+    if(x % i == 0) {
+        y++;
+    }
 }
+
+if(y == 2) {
+    console.log("simple");
+} else {
+    console.log("Isn't simple");
+}
+
