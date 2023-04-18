@@ -100,7 +100,7 @@
 
 /* Simple numbers */
 
-let x = 20;
+let x = 23;
 let y = 0;
 
 for (let i = 1; i <= x; i++) {
@@ -114,4 +114,3 @@ if(y == 2) {
 } else {
     console.log("Isn't simple");
 }
-
