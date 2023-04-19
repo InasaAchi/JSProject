@@ -1,7 +1,7 @@
 let even = 0;
 let odd = 0;
 
-for(let i = 500; i <= 800; i += 2) {
+for(let i = 501; i <= 800; i += 2) {
     even += i;
 }
 

@@ -1,14 +1,12 @@
-let x = 18;
-let y = 0;
-
-for(let i = 2; i <= x; i++) {
-    if(x % i == 0) {
-        y++
-    }
+let x = 1;
+let isPrime = true;
+if(x < 2) {
+  isPrime = false;
+}
+for(let i = 2; i <= x/2; i++) {
+  if(x % i == 0) {
+    isPrime = false;
+  }
 }
 
-if(y < 3) {
-    console.log("simple");
-} else {
-    console.log("It's not simple");
-}
+console.log(isPrime);
